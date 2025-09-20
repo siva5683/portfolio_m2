@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Background Image</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="navbar-bg">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content">
+    <h1>Mr.ISWAR SAHU</h1>
+    <hr>
+    <p1>A FULLSTACK DEVELOPER</p1>
+  </div>
+  <!-- Page content goes here -->
+
+  <div class="container">
+    <h1>I'm a <span class="auto-type">Developer</span></h1>
+  </div>
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+   <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Developer", "Designer", "Creator",],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    });
+   </script>
+
+
+<section class="services">
+    <h2>My Services</h2>
+    <div class="service-container">
+      
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="./images/web.jpeg" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Responsive Web Design always plays an important role whenever going to promote your website<br>
+          I create modern, responsive websites using the latest technologies.</p>
+        <a href="#" class="btn">More</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="./images/db.jpeg" alt="Desktop Apps" class="db">
+        <h3>Database Management</h3>
+        <p>Detail specific database features, services, and pricing based on the project's requirements.</p>
+        <a href="#" class="btn">More</a>
+      </div>
+
+    </div>
+  </section>
+
+  
+<div class="skills-section">
+  <h1>Skills</h1>
+  <div class="skills-grid">
+    <div class="skill-col">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>SQL</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+      </div>
+    </div>
+    <div class="skill-col">
+      <div class="skill">
+        <span>CSS</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>PYTHON</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <span>C</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="cont">
+  <div class="contact">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+  
+      <div class="form-container">
+          <form>
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name">
+        
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email">
+
+              <label for="contact">Contact</label>
+              <input type="text" id="contact" placeholder="Enter contact number">
+            </div>
+
+            <div class="message-box">
+              <label for="message">Type your message</label>
+              <textarea id="message" rows="5" placeholder="Type your message here..."></textarea>
+            </div>
+
+          <button type="submit">Submit</button>
+          </form>
+      </div>
+  </div>
+</section>
+</body>
+</html>
